@@ -23,6 +23,12 @@ class IntListTest {
 		assertEquals(2, myIntList.getLength());
 		assertArrayEquals(new int[] {10, 20}, myIntList.getElements());
 		assertEquals(10, myIntList.getElementAt(0));
+		
+		int[] xs = myIntList.getElements();
+		xs[0] = 100;
+		
+		assertEquals(10, myIntList.getElementAt(0));
+		
 	}
 
 }
